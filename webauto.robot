@@ -6,7 +6,11 @@ Library     ExtendedSeleniumLibrary
 Resource    LoginKeywords.robot
 
 *** Variables ***
-${Browser}
+${BROWSER}    Chrome
+${REMOTE_URL}     http://web.develop.shasta.esubonline.com/
+${BROWSER VERSION}    59.0
+${APP_LOCATION}      /Users/tonydrake/Documents/ShastaAutomation/Web/shasta.robot/ShastaWebAuto
+
 
 *** Test Cases ***
 
