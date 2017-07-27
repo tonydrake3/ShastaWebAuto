@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170726 18:24:21.310" generator="Robot 3.0.2 (Python 2.7.13 on darwin)">
+<suite source="/Users/tonydrake/Documents/ShastaAutomation/Web/shasta.robot/ShastaWebAuto/webauto.robot" id="s1" name="Webauto">
+<test id="s1-t1" name="Invalid Login then Valid Login">
+<kw name="Invalid Login then Valid Login" library="LoginKeywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://web.develop.shasta.esubonline.com/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20170726 18:24:21.413" level="INFO">Opening browser 'Chrome' to base url 'http://web.develop.shasta.esubonline.com/'</msg>
+<status status="PASS" endtime="20170726 18:24:27.185" starttime="20170726 18:24:21.413"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>eSUB</arg>
+</arguments>
+<status status="PASS" endtime="20170726 18:24:27.237" starttime="20170726 18:24:27.186"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>manager@esub.com</arg>
+</arguments>
+<msg timestamp="20170726 18:24:27.237" level="INFO">Typing text 'manager@esub.com' into text field 'id=txtUsername'</msg>
+<status status="PASS" endtime="20170726 18:24:27.526" starttime="20170726 18:24:27.237"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170726 18:24:29.526" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170726 18:24:29.527" starttime="20170726 18:24:27.526"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>Test1234567</arg>
+</arguments>
+<msg timestamp="20170726 18:24:29.527" level="INFO">Typing text 'Test1234567' into text field 'id=txtPassword'</msg>
+<status status="PASS" endtime="20170726 18:24:29.641" starttime="20170726 18:24:29.527"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20170726 18:24:29.642" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20170726 18:24:29.745" starttime="20170726 18:24:29.642"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170726 18:24:32.747" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170726 18:24:32.747" starttime="20170726 18:24:29.745"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>The user name or password is incorrect.</arg>
+</arguments>
+<status status="PASS" endtime="20170726 18:24:32.770" starttime="20170726 18:24:32.747"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170726 18:24:35.771" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170726 18:24:35.771" starttime="20170726 18:24:32.770"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>manager@esub.com</arg>
+</arguments>
+<msg timestamp="20170726 18:24:35.772" level="INFO">Typing text 'manager@esub.com' into text field 'id=txtUsername'</msg>
+<status status="PASS" endtime="20170726 18:24:35.882" starttime="20170726 18:24:35.771"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170726 18:24:37.884" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170726 18:24:37.884" starttime="20170726 18:24:35.882"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>Test1234</arg>
+</arguments>
+<msg timestamp="20170726 18:24:37.885" level="INFO">Typing text 'Test1234' into text field 'id=txtPassword'</msg>
+<status status="PASS" endtime="20170726 18:24:37.951" starttime="20170726 18:24:37.884"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20170726 18:24:37.952" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20170726 18:24:38.005" starttime="20170726 18:24:37.951"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170726 18:24:41.006" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170726 18:24:41.006" starttime="20170726 18:24:38.005"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170726 18:24:41.073" starttime="20170726 18:24:41.006"></status>
+</kw>
+<status status="PASS" endtime="20170726 18:24:41.073" starttime="20170726 18:24:21.413"></status>
+</kw>
+<status status="PASS" endtime="20170726 18:24:41.074" critical="yes" starttime="20170726 18:24:21.413"></status>
+</test>
+<doc>Basic test on eSUB website</doc>
+<status status="PASS" endtime="20170726 18:24:41.075" starttime="20170726 18:24:21.318"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Webauto" pass="1">Webauto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
